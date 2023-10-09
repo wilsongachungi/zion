@@ -8,7 +8,7 @@
 
   <meta name="copyright" content="MACode ID, https://macodeid.com/">
 
-  <title>One Health - Medical Center HTML5 Template</title>
+  <title>zion valley </title>
 
   <link rel="stylesheet" href="../assets/css/maicons.css">
 
@@ -39,8 +39,7 @@
           <div class="col-sm-4 text-right text-sm">
             <div class="social-mini-button">
               <a href="#"><span class="mai-logo-facebook-f"></span></a>
-              <a href="#"><span class="mai-logo-twitter"></span></a>
-              <a href="#"><span class="mai-logo-dribbble"></span></a>
+              <a href="#"><span class="mai-logo-whatsapp"></span></a>
               <a href="#"><span class="mai-logo-instagram"></span></a>
             </div>
           </div>
@@ -51,7 +50,7 @@
     <nav class="navbar navbar-expand-lg navbar-light shadow-sm">
       <div class="container">
         <a class="navbar-brand" href="#"><span class="text-primary">Zion</span>-Valley</a>
-
+{{--
         <form action="#">
           <div class="input-group input-navbar">
             <div class="input-group-prepend">
@@ -59,7 +58,7 @@
             </div>
             <input type="text" class="form-control" placeholder="Enter keyword.." aria-label="Username" aria-describedby="icon-addon1">
           </div>
-        </form>
+        </form> --}}
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupport" aria-controls="navbarSupport" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -80,7 +79,7 @@
               <a class="nav-link" href="blog.html">Accomodations</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="blog.html">Harambee's Zion Structure</a>
+                <a class="nav-link" href="blog.html">Harambee's Structure</a>
               </li>
             <li class="nav-item">
               <a class="nav-link" href="contact.html">Contact</a>
@@ -106,22 +105,21 @@
 
               @endif
           </ul>
-        </div> <!-- .navbar-collapse -->
-      </div> <!-- .container -->
+        </div>
     </nav>
   </header>
 
   <div class="page-hero bg-image " style="background-image: url(../assets/img/Capture21.JPG);">
     <div class="hero-section">
       <div class="container text-center wow zoomIn">
-        <span class="subhead">Let's make your life happier</span>
-        <h1 class="display-4">Healthy Living</h1>
-        <a href="#" class="btn btn-primary">Let's Consult</a>
+        <span class="subhead">Let's make your life happier at</span>
+        <h1 class="display-4"><strong>zion valley</strong></h1>
+
       </div>
     </div>
   </div>
 
-> <!-- .page-section -->
+
 
     <div class="page-section pb-0">
       <div class="container">
@@ -133,7 +131,7 @@
           </div>
           <div class="col-lg-6 wow fadeInRight" data-wow-delay="400ms">
             <div class="img-place custom-img-1">
-              <img src="../assets/img/Capture19.JPG" alt="">
+              <img style="length:100%;height:100%" src="../assets/img/Capture19.JPG" alt="">
             </div>
           </div>
         </div>
