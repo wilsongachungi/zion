@@ -22,7 +22,21 @@
 </head>
 <body>
 
-  <!-- Back to top button -->
+
+    @if(session()->has('message'))
+    <div class="alert alert-success">
+
+        <button type="button" class="close" data-dismiss="alert">
+            X
+        </button>
+
+        {{session()->get('message')}}
+
+    </div>
+
+
+    @endif
+    
   <div class="back-to-top"></div>
 
   <header>
@@ -31,7 +45,7 @@
         <div class="row">
           <div class="col-sm-8 text-sm">
             <div class="site-info">
-              <a href="#"><span class="mai-call text-primary"></span> +00 123 4455 6666</a>
+              <a href="#"><span class="mai-call text-primary"></span> +254 792 668219</a>
               <span class="divider">|</span>
               <a href="#"><span class="mai-mail text-primary"></span> zionvalley@gmail.com</a>
             </div>
@@ -67,22 +81,22 @@
         <div class="collapse navbar-collapse" id="navbarSupport">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="index.html">Home</a>
+              <a class="nav-link" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="about.html">Community Environment</a>
+              <a class="nav-link" href="#">Community Environment</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="doctors.html">Projects</a>
+              <a class="nav-link" href="#">Projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="blog.html">Accomodations</a>
+              <a class="nav-link" href="#">Accomodations</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="blog.html">Harambee's Structure</a>
+                <a class="nav-link" href="#">Harambee's Structure</a>
               </li>
             <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
+              <a class="nav-link" href="#">Contact</a>
             </li>
 
             @if(Route::has('login'))
@@ -125,8 +139,15 @@
       <div class="container">
         <div class="row align-items-center">
           <div class="col-lg-6 py-3 wow fadeInUp">
-            <h1>Welcome to Zion <br> Valley</h1>
-            <p class="text-grey mb-4">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Accusantium aperiam earum ipsa eius, inventore nemo labore eaque porro consequatur ex aspernatur. Explicabo, excepturi accusantium! Placeat voluptates esse ut optio facilis!</p>
+            <h1> <strong>Welcome to Zion <br> Valley</h1></strong></h1>
+            <p class="text-grey mb-4"> At Zion Valley, we believe that a
+                resort isn't just a destination; it's a living, breathing part of the community it
+                 serves. We're proud to introduce a revolutionary concept in the world of hospitality,
+                  where the heart of our operation lies not only in providing exceptional experiences
+                  for our guests but also in actively contributing to the well-being and development of
+                   the local community
+
+                </p>
             <a href="about.html" class="btn btn-primary">Learn More</a>
           </div>
           <div class="col-lg-6 wow fadeInRight" data-wow-delay="400ms">
@@ -136,8 +157,30 @@
           </div>
         </div>
       </div>
-    </div> <!-- .bg-light -->
+    </div>
+  </div>
+
+
+
+  <div class="page-section pb-0">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 py-3 wow fadeInUp">
+          <h1> <strong> Escape to Paradise:  <br> Your Ultimate Resort Getaway</strong></h1>
+          <p class="text-grey mb-4">Discover the
+            epitome of luxury and relaxation at our breathtaking resort! Nestled in the heart of
+             Nyeri, our resort is a haven for those seeking an unforgettable escape from the daily
+             grind</p>
+        </div>
+        <div class="col-lg-6 wow fadeInRight" data-wow-delay="400ms">
+          <div class="img-place custom-img-1">
+            <img style="" src="../assets/img/List-Of-Best-Paintball-Locations-In-Kenya-5.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
   </div> <!-- .bg-light -->
+</div><!-- .bg-light -->
 
  @include('user.doc');
  @include('user.lattest');
@@ -155,8 +198,7 @@
           <h5>Company</h5>
           <ul class="footer-menu">
             <li><a href="#">About Us</a></li>
-            <li><a href="#">Career</a></li>
-            <li><a href="#">Editorial Team</a></li>
+            <li><a href="#"> Team</a></li>
             <li><a href="#">Protection</a></li>
           </ul>
         </div>
@@ -164,39 +206,34 @@
           <h5>More</h5>
           <ul class="footer-menu">
             <li><a href="#">Terms & Condition</a></li>
-            <li><a href="#">Privacy</a></li>
             <li><a href="#">Advertise</a></li>
-            <li><a href="#">Join as Doctors</a></li>
+            <li><a href="#">Join as Member</a></li>
           </ul>
         </div>
         <div class="col-sm-6 col-lg-3 py-3">
           <h5>Our partner</h5>
           <ul class="footer-menu">
             <li><a href="#">One-Fitness</a></li>
-            <li><a href="#">One-Drugs</a></li>
-            <li><a href="#">One-Live</a></li>
           </ul>
         </div>
         <div class="col-sm-6 col-lg-3 py-3">
           <h5>Contact</h5>
-          <p class="footer-link mt-2">351 Willow Street Franklin, MA 02038</p>
-          <a href="#" class="footer-link">701-573-7582</a>
-          <a href="#" class="footer-link">healthcare@temporary.net</a>
+          <p class="footer-link mt-2">Nyeri,Mathari behind outspan college</p>
+          <a href="#" class="footer-link">+254 792 668219</a>
+          <a href="#" class="footer-link">zionvalley@gmail.com</a>
 
           <h5 class="mt-3">Social Media</h5>
           <div class="footer-sosmed mt-3">
             <a href="#" target="_blank"><span class="mai-logo-facebook-f"></span></a>
             <a href="#" target="_blank"><span class="mai-logo-twitter"></span></a>
-            <a href="#" target="_blank"><span class="mai-logo-google-plus-g"></span></a>
             <a href="#" target="_blank"><span class="mai-logo-instagram"></span></a>
-            <a href="#" target="_blank"><span class="mai-logo-linkedin"></span></a>
           </div>
         </div>
       </div>
 
       <hr>
 
-      <p id="copyright">Copyright &copy; 2020 <a href="https://macodeid.com/" target="_blank">MACode ID</a>. All right reserved</p>
+      <p id="copyright">Copyright &copy; 2023 <a href="https://macodeid.com/" target="_blank">wigitech</a>. All right reserved</p>
     </div>
   </footer>
 

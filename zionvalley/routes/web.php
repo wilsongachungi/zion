@@ -17,9 +17,9 @@ use App\Http\Controllers\AdminController;
 
 
 
-Route::get('/',[HomeController::class, 'index']);
-Route::get('/home',[HomeController::class, 'redirect']);
-Route::get('/admin.add_image_view',[HomeController::class, 'redirect']);
+Route::get('/', [HomeController::class, 'index']);
+Route::get('/home', [HomeController::class, 'redirect']);
+Route::get('/admin.add_image_view', [HomeController::class, 'redirect']);
 
 Route::middleware([
     'auth:sanctum',
@@ -31,4 +31,8 @@ Route::middleware([
     })->name('dashboard');
 });
 
-Route::get('/admin.add_image_view',[AdminController::class, 'addview']);
+Route::get('/add_member_view', [AdminController::class, 'addview']);
+Route::get('/registration_view', [AdminController::class, 'registered']);
+Route::post('/upload_members', [AdminController::class, 'upload']);
+Route::get('/home_view', [AdminController::class, 'homeview']);
+Route::post('appointment', [HomeController::class, 'appointment'])->name('appointment');
