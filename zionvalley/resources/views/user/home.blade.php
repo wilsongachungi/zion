@@ -26,17 +26,17 @@
     @if(session()->has('message'))
     <div class="alert alert-success">
 
+        {{session()->get('message')}}
         <button type="button" class="close" data-dismiss="alert">
             X
         </button>
 
-        {{session()->get('message')}}
 
     </div>
 
 
     @endif
-    
+
   <div class="back-to-top"></div>
 
   <header>
@@ -98,6 +98,7 @@
             <li class="nav-item">
               <a class="nav-link" href="#">Contact</a>
             </li>
+          
 
             @if(Route::has('login'))
 
@@ -105,21 +106,20 @@
             <x-app-layout>
 
             </x-app-layout>
-
             @else
-
-            <li class="nav-item">
-              <a class="btn btn-primary ml-lg-3" href="{{ route('login') }}">Login</a>
-            </li>
-            <li class="nav-item">
-                <a class="btn btn-primary ml-lg-3" href="{{ route('register') }}">Register</a>
-              </li>
+                <li class="nav-item">
+                <a class="btn btn-primary ml-lg-3" href="{{ route('login') }}">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn btn-primary ml-lg-3" href="{{ route('register') }}">Register</a>
+                </li>
 
               @endauth
 
               @endif
           </ul>
         </div>
+
     </nav>
   </header>
 
@@ -128,6 +128,7 @@
       <div class="container text-center wow zoomIn">
         <span class="subhead">Let's make your life happier at</span>
         <h1 class="display-4"><strong>zion valley</strong></h1>
+
 
       </div>
     </div>
