@@ -98,14 +98,15 @@
             <li class="nav-item">
               <a class="nav-link" href="#">Contact</a>
             </li>
-          
+
 
             @if(Route::has('login'))
 
+            <li class="nav-item">
+                <a class="nav-link" style="background-color: greenyellow" href="{{route('message')}}">Message</a>
+              </li>
             @auth
-            <x-app-layout>
 
-            </x-app-layout>
             @else
                 <li class="nav-item">
                 <a class="btn btn-primary ml-lg-3" href="{{ route('login') }}">Login</a>

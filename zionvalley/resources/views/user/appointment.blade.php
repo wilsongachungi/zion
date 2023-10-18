@@ -1,6 +1,6 @@
 <div class="page-section">
     <div class="container">
-      <h1 class="text-center wow fadeInUp">Make an Appointment</h1>
+      <h1 class="text-center wow fadeInUp">Send a Message</h1>
 
       <form class="main-form" method="post" action="{{ route('appointment') }}" enctype="multipart/form-data">
         @csrf

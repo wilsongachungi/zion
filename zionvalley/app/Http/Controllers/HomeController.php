@@ -62,4 +62,8 @@ class HomeController extends Controller
 
         return redirect()->back()->with('message', 'Appointment made Successful. Will contact you soon ');
     }
+
+    public function message() {
+        return view('user.home');
+    }
 }
