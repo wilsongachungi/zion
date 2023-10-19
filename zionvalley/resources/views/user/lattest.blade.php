@@ -1,6 +1,8 @@
 <div class="page-section bg-light">
     <div class="container">
       <h1 class="text-center wow fadeInUp">ACCOMMODATION</h1>
+      <h3 class="text-center wow fadeInUp" style="color: black">Comming Soon..!</h3>
+
       <div class="row mt-5">
         <div class="col-lg-4 py-2 wow zoomIn">
           <div class="card-blog">

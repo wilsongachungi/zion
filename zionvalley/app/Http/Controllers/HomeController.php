@@ -60,10 +60,31 @@ class HomeController extends Controller
 
         // $data->save();
 
-        return redirect()->back()->with('message', 'Appointment made Successful. Will contact you soon ');
+        return redirect()->back()->with('message', 'Thank you! Message sent sucessfully. Will contact you soon ');
     }
 
-    public function message() {
+    public function message()
+    {
+        if (Auth::id()) {
+            return view('user.message');
+        } else {
+            return redirect()->back();
+        }
+    }
+
+    public function home()
+    {
         return view('user.home');
     }
+
+    public function community()
+    {
+        return view('user.community');
+    }
+
+    public function project()
+    {
+        return view('user.project');
+    }
+
 }

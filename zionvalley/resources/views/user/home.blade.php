@@ -81,13 +81,13 @@
         <div class="collapse navbar-collapse" id="navbarSupport">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Home</a>
+              <a class="nav-link" href="{{ route('home')}}">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Community Environment</a>
+              <a class="nav-link" href="{{ route('community')}}">Community Environment</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Projects</a>
+              <a class="nav-link" href="{{ route('project')}}">Projects</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Accomodations</a>
@@ -103,9 +103,13 @@
             @if(Route::has('login'))
 
             <li class="nav-item">
-                <a class="nav-link" style="background-color: greenyellow" href="{{route('message')}}">Message</a>
+                <a class="nav-link" style="background-color: greenyellow" href="{{ route('message')}}">Message</a>
               </li>
             @auth
+            <x-app-layout>
+
+            </x-app-layout>
+
 
             @else
                 <li class="nav-item">
